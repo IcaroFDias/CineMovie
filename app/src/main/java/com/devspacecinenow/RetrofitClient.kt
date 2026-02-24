@@ -10,9 +10,9 @@ object RetrofitClient   {
 
     private val httpClient: OkHttpClient
         get() {
-            val token = ""
-
             val clientBuilder = OkHttpClient.Builder()
+            val token = BuildConfig.API_KEY
+
 
             clientBuilder.addInterceptor { chain ->
                 val original: Request = chain.request()
