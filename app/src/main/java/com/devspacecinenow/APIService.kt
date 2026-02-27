@@ -5,6 +5,7 @@ import retrofit2.http.GET
 
 interface ApiService {
 
-    @GET("https://api.themoviedb.org/3/movie")
+    @GET("movie/popular")
     fun getPopularMovies(): Call<MovieResponse>
+
 }
